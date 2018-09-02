@@ -11,21 +11,14 @@ print("--- 4 --- Mountain Dew")
 
 choice = input("\nEnter Number to buy a Drink: ")
 
-def vendor(choice):
-    switcher = {1: cola, 2: pepsi, 3: sprite, 4: dew}
-    func = switcher.get(choice, "invalid number") 
-    return func()   
-
-print(vendor(choice))
-
 def cola():
     """A function to operate on coca-cola option"""
-    price = input("Enter 100 to buy a Drink: ")
+    price = int(input("Enter 100 to buy a coca-cola: "))
     cost = 100
     if price == cost:
         return "Coca-Cola"
     elif price < cost:
-        newprice = input("Enter more to buy a Drink: ")
+        newprice = int(input("Enter more to buy a coca-cola: "))
         if newprice + price == cost:
             return "Coca-Cola"
         else:
@@ -38,12 +31,12 @@ def cola():
 
 def pepsi():
     """A function to operate on pepsi option"""
-    price = input("Enter 50 to buy a Drink: ")
+    price = int(input("Enter 50 to buy a pepsi: "))
     cost = 50
     if price == cost:
         return "Pepsi"
     elif price < cost:
-        newprice = input("Enter more to buy a Drink: ")
+        newprice = int(input("Enter more to buy a pepsi: "))
         if newprice + price == cost:
             return "Pepsi"
         else:
@@ -56,12 +49,12 @@ def pepsi():
 
 def sprite():
     """A function to operate on sprite option"""
-    price = input("Enter 70 to buy a Drink: ")
+    price = int(input("Enter 70 to buy a sprite: "))
     cost = 70
     if price == cost:
         return "Sprite"
     elif price < cost:
-        newprice = input("Enter more to buy a Drink: ")
+        newprice = int(input("Enter more to buy a sprite: "))
         if newprice + price == cost:
             return "Sprite"
         else:
@@ -74,12 +67,12 @@ def sprite():
 
 def dew():  
     """A function to operate on Mountain option"""
-    price = input("Enter 80 to buy a Drink: ")
+    price = int(input("Enter 80 to buy a Mountain option: "))
     cost = 80
     if price == cost:
         return "Mountain Dew"  
     elif price < cost:
-        newprice = input("Enter more to buy a Drink: ")
+        newprice = int(input("Enter more to buy a Mountain option: "))
         if newprice + price == cost:
             return "Mountain Dew"
         else:
@@ -90,6 +83,11 @@ def dew():
     else:
         return "oops"
 
+switcher = {"one": cola, "two": pepsi, "three": sprite, "four": dew}
+lines = ["one", "two", "three", "four"]
 
+for line in lines:
+    func = switcher[line]
+    func()
             
  

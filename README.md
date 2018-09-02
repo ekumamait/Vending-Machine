@@ -1,8 +1,8 @@
-##### VENDING MACHINE
+##### **VENDING MACHINE**
 
 ------------
 
-##### TABLE OF CONTENT;
+##### **TABLE OF CONTENT**;
 
 ------------
 
@@ -25,12 +25,14 @@ The main focus of this build in its present is to demonstrate understanding of P
 | ------------ | 
 | Choose Drink | 
 | Insert Money |
+| Return Balance |
 
 ------------
 
-##### PROJECT DEMO;
+#### PROJECT DEMO;
 
 pending.....
+
 ------------
 
 #### TECHNOLOGIES [Built with] 

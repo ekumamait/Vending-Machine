@@ -1,14 +1,3 @@
-"""This displays the menu"""
-
-print("---------- VENDING MACHINE --------------")
-
-print("Number -- Drink")
-print("--- 1 --- Coca-Cola")
-print("--- 2 --- Pepsi")
-print("--- 3 --- Sprite")
-print("--- 4 --- Mountain Dew")
-
-choice = input("Enter Number to buy a Drink: ")
 
 class Vendor:
     def __init__(self):

@@ -1,16 +1,3 @@
-
-"""This displays the menu"""
-
-print("\n-- VENDING MACHINE --")
-
-print("\n *Number  *Drink")
-print("\n--- 1 --- Coca-Cola")
-print("--- 2 --- Pepsi")
-print("--- 3 --- Sprite")
-print("--- 4 --- Mountain Dew")
-
-choice = input("\nEnter Number to buy a Drink: ")
-
 def cola():
     """A function to operate on coca-cola option"""
     price = int(input("Enter 100 to buy a coca-cola: "))
@@ -83,13 +70,20 @@ def dew():
     else:
         print("oops! invalid input")
 
+"""This displays the menu"""
+
+print("\n-- VENDING MACHINE --")
+
+print("\n *Number  *Drink")
+print("\n--- 1 --- Coca-Cola")
+print("--- 2 --- Pepsi")
+print("--- 3 --- Sprite")
+print("--- 4 --- Mountain Dew")
+
+choice = int(input("\nEnter Number to buy a Drink: "))        
+
 switcher = {1: cola, 2: pepsi, 3: sprite, 4: dew}
-lines = [1, 2, 3, 4]
+function = switcher.get(choice) 
 
-for line in lines:
-    func = switcher[line]
-    func()
-
-# func = switcher.get(choice, "invalid input")
-# return fun()
+function()
  

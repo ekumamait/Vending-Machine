@@ -7,7 +7,7 @@
 ------------
 
 - [x] **DESCRIPTION**
-- [x] **AVAILABLE PAGES**
+- [x] **AVAILABLE FUNCTIONALITY**
 - [ ] **PROJECT DEMO**
 - [x] **TECHNOLOGIES**
 
